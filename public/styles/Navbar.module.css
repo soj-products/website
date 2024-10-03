@@ -1,0 +1,56 @@
+/* Navbar.module.css */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #333;
+  padding: 0 20px;
+  color: white;
+  position: relative;
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Nav links styling */
+.navLinks {
+  list-style: none; /* Remove default list styling */
+  display: flex;    /* Display items in a row */
+  flex-grow: 1;     /* Let the nav links take the available space */
+  justify-content: center; /* Center the nav links */
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks li {
+  margin-right: 30px; /* Add space between the links */
+  position: relative;
+}
+
+.navLinks li:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+.navLinks li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none; /* You can later add a hamburger menu for mobile */
+  }
+}
